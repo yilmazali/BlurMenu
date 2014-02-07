@@ -21,6 +21,12 @@
 		411C363D18A2C70700E9934E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C361F18A2C70600E9934E /* UIKit.framework */; };
 		411C364518A2C70700E9934E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 411C364318A2C70700E9934E /* InfoPlist.strings */; };
 		411C364718A2C70700E9934E /* BlurMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C364618A2C70700E9934E /* BlurMenuTests.m */; };
+		411C366318A2CFD300E9934E /* 1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 411C366018A2CFD300E9934E /* 1@2x.jpg */; };
+		411C366418A2CFD300E9934E /* 2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 411C366118A2CFD300E9934E /* 2@2x.jpg */; };
+		411C366518A2CFD300E9934E /* 3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 411C366218A2CFD300E9934E /* 3@2x.jpg */; };
+		415AC63318A3B0FC002915CC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 415AC63218A3B0FC002915CC /* UIImage+ImageEffects.m */; };
+		415AC63918A3B13C002915CC /* BlurMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 415AC63818A3B13C002915CC /* BlurMenu.m */; };
+		415AC63F18A3BDF7002915CC /* BlurMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 415AC63E18A3BDF7002915CC /* BlurMenuItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,15 @@
 		411C364218A2C70700E9934E /* BlurMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlurMenuTests-Info.plist"; sourceTree = "<group>"; };
 		411C364418A2C70700E9934E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		411C364618A2C70700E9934E /* BlurMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlurMenuTests.m; sourceTree = "<group>"; };
+		411C366018A2CFD300E9934E /* 1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1@2x.jpg"; sourceTree = "<group>"; };
+		411C366118A2CFD300E9934E /* 2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2@2x.jpg"; sourceTree = "<group>"; };
+		411C366218A2CFD300E9934E /* 3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3@2x.jpg"; sourceTree = "<group>"; };
+		415AC63118A3B0FC002915CC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		415AC63218A3B0FC002915CC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		415AC63718A3B13C002915CC /* BlurMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurMenu.h; sourceTree = "<group>"; };
+		415AC63818A3B13C002915CC /* BlurMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurMenu.m; sourceTree = "<group>"; };
+		415AC63D18A3BDF7002915CC /* BlurMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurMenuItemCell.h; sourceTree = "<group>"; };
+		415AC63E18A3BDF7002915CC /* BlurMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurMenuItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +127,10 @@
 		411C362118A2C70600E9934E /* BlurMenu */ = {
 			isa = PBXGroup;
 			children = (
+				415AC63518A3B110002915CC /* UIImage+ImageEffects */,
 				411C362A18A2C70600E9934E /* AppDelegate.h */,
 				411C362B18A2C70600E9934E /* AppDelegate.m */,
+				41BBFE3F18A3C4AB00E1262C /* BlurMenu */,
 				411C362D18A2C70600E9934E /* Main.storyboard */,
 				411C363018A2C70600E9934E /* ViewController.h */,
 				411C363118A2C70600E9934E /* ViewController.m */,
@@ -126,6 +143,9 @@
 		411C362218A2C70600E9934E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				411C366018A2CFD300E9934E /* 1@2x.jpg */,
+				411C366118A2CFD300E9934E /* 2@2x.jpg */,
+				411C366218A2CFD300E9934E /* 3@2x.jpg */,
 				411C362318A2C70600E9934E /* BlurMenu-Info.plist */,
 				411C362418A2C70600E9934E /* InfoPlist.strings */,
 				411C362718A2C70600E9934E /* main.m */,
@@ -150,6 +170,26 @@
 				411C364318A2C70700E9934E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		415AC63518A3B110002915CC /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				415AC63118A3B0FC002915CC /* UIImage+ImageEffects.h */,
+				415AC63218A3B0FC002915CC /* UIImage+ImageEffects.m */,
+			);
+			name = "UIImage+ImageEffects";
+			sourceTree = "<group>";
+		};
+		41BBFE3F18A3C4AB00E1262C /* BlurMenu */ = {
+			isa = PBXGroup;
+			children = (
+				415AC63718A3B13C002915CC /* BlurMenu.h */,
+				415AC63818A3B13C002915CC /* BlurMenu.m */,
+				415AC63D18A3BDF7002915CC /* BlurMenuItemCell.h */,
+				415AC63E18A3BDF7002915CC /* BlurMenuItemCell.m */,
+			);
+			name = BlurMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +270,9 @@
 			files = (
 				411C363418A2C70600E9934E /* Images.xcassets in Resources */,
 				411C362618A2C70600E9934E /* InfoPlist.strings in Resources */,
+				411C366518A2CFD300E9934E /* 3@2x.jpg in Resources */,
+				411C366418A2CFD300E9934E /* 2@2x.jpg in Resources */,
+				411C366318A2CFD300E9934E /* 1@2x.jpg in Resources */,
 				411C362F18A2C70600E9934E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415AC63318A3B0FC002915CC /* UIImage+ImageEffects.m in Sources */,
 				411C363218A2C70600E9934E /* ViewController.m in Sources */,
+				415AC63F18A3BDF7002915CC /* BlurMenuItemCell.m in Sources */,
+				415AC63918A3B13C002915CC /* BlurMenu.m in Sources */,
 				411C362C18A2C70600E9934E /* AppDelegate.m in Sources */,
 				411C362818A2C70600E9934E /* main.m in Sources */,
 			);
@@ -460,6 +506,7 @@
 				411C364C18A2C70700E9934E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		411C364D18A2C70700E9934E /* Build configuration list for PBXNativeTarget "BlurMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +515,7 @@
 				411C364F18A2C70700E9934E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

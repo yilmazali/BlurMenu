@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlurMenu.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BlurMenuDelegate>
 
 @end
