@@ -16,10 +16,6 @@
 @implementation BlurMenu
 @synthesize parent, delegate, menuItems, _collectionView;
 
-- (id)initWithItems:(NSArray*)items parentView:(UIView *)p; {
-    return [self initWithItems:items parentView:p delegate:nil];
-}
-
 - (id)initWithItems:(NSArray*)items parentView:(UIView *)p delegate:(id<BlurMenuDelegate>)d {
     self = [super init];
     if (self) {

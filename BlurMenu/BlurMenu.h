@@ -31,7 +31,6 @@
 @property(nonatomic, retain) NSArray *menuItems;
 @property(nonatomic, retain) UICollectionView *_collectionView;
 
-- (id)initWithItems:(NSArray*)items parentView:(UIView *)p;
 - (id)initWithItems:(NSArray*)items parentView:(UIView *)p delegate:(id<BlurMenuDelegate>)d;
 
 - (void)show;
